@@ -1,9 +1,6 @@
 import { resolve } from 'node:path';
 
 export default defineNuxtConfig({
-  app: {
-    baseURL: 'https://hipe-network.vercel.app/',
-  },
   modules: ['@hebilicious/authjs-nuxt', '@element-plus/nuxt', '@unocss/nuxt'],
   css: ['@/assets/scss/main.scss'],
   runtimeConfig: {
@@ -37,7 +34,7 @@ export default defineNuxtConfig({
     verifyClientOnEveryRequest: true,
     guestRedirectTo: '/',
     authenticatedRedirectTo: '/home',
-    baseUrl: 'https://hipe-network.vercel.app/', // should be something like https://www.my-app.com
+    baseUrl: 'https://hipe-network.vercel.app', // should be something like https://www.my-app.com
   },
   elementPlus: {
     importStyle: 'scss',
